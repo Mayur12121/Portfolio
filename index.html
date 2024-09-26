@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="/logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/bd37496ea5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="background"></div>
+    
+    <!-- Header section -->
+     
+    <div id="header">
+        <div id="container">
+
+            <nav>
+                <img src="/logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">My work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h1>Hello, I am <span>Mayur</span></h1>
+                <h1 id="gap">This is my portfolio...</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>hello everyone, this is Mayur Reddy, I am a Web Developer and programmer. </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>designing websites and interactive web pages using html,css and javascript</li>
+                                <li><span>Programming</span><br>code in python,java,c++ and typescript</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Django-python intern</span><br>Worked as a Python-Django web Development intern at Elite Softwares</li>
+                                <li><span>Python intern</span><br>Python Internship at codsoft</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>SSC</span><br>cleared with 73%</li>
+                                <li><span>HSC</span><br>cleared with 78%</li>
+                                <li><span>BE</span><br>currently persuing</li>
+
+                            </ul>
+                        </div>
+                   
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Services section -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>  
+                    <h2>Web Design</h2>
+                    <p>design interactive web pages as per requirement using various technologies used in the market</p>
+                    <a href="#">check out</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Programming</h2>
+                    <p>Program in different languages like python,c++,java,etc</p>
+                    <a href="#">check out</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Web Development</h2>
+                    <p>Create full websites with customizations</p>
+                    <a href="#">check out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio section -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/work.png" alt="">
+                    <div class="layer">
+                        <h3>Creative website</h3>
+                        <p>creative webdesign for demo</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/work.png" alt="">
+                    <div class="layer">
+                        <h3>Creative website</h3>
+                        <p>creative webdesign for demo</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/work.png" alt="">
+                    <div class="layer">
+                        <h3>Creative website</h3>
+                        <p>creative webdesign for demo</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fas fa-paper-plane"></i>mayurreddy5@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>9209097525</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="/resume.pdf" download class="btn btn2" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email Id" required>
+                        <textarea name="message" id="" rows="6" placeholder="Type Your Message Here"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Designed by Mayur Reddy</p>
+    </div>
+
+<!-- Javascript linking-->
+
+<script src="/myscript.js"></script>
+</body>
+</html>
